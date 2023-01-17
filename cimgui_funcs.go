@@ -6642,10 +6642,10 @@ func CalcTextSize(text string) Vec2 {
 
 	C.wrap_igCalcTextSize(pOutArg, textArg)
 
-	defer func() {
-		pOutFin()
-		textFin()
-	}()
+	//defer func() {
+	pOutFin()
+	textFin()
+	//}()
 
 	return *pOut
 
